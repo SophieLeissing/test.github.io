@@ -1,0 +1,563 @@
+/*** Allgemeines ***/
+h1 {
+    font-weight: 700;
+    font-style: oblique;
+    font-size: 3.5em;
+}
+
+h2 {
+    font-family: "Tinos";
+    font-style: oblique;
+    font-size: 3.5em;
+    color: #0037FF;
+    padding-top: 2em;
+}
+
+h3 {
+    font-weight: 300;
+    font-style: oblique;
+    font-size: 3.5em;
+    color: #0037FF;
+}
+
+h4 {
+    color: #0037FF;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+h5 {
+    font-family: "Tinos";
+    font-style: oblique;
+    font-size: 2em;
+    color: #0037FF;
+    font-weight: 200;
+    padding-top: 0.5em;
+}
+
+h6 {
+    font-family: "Tinos";
+    font-style: oblique;
+    font-size: 10em;
+    color: #0037FF;
+    font-weight: 200;
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+h7 {
+    font-size: 13em;
+    color: white;
+    font-weight: 800;
+    line-height: 95%;
+}
+
+.cursive {
+    font-family: "Tinos";
+    font-style: oblique;
+    font-weight: 400;
+}
+
+p {
+    margin-top: 0.7em;
+    margin-bottom: 2em;
+}
+
+a {
+    display: block;
+}
+
+.ContactLinks {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2.5em;
+}
+
+.ContactLinks:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+* {
+    font-family: "Lato";
+    padding: 0;
+    margin: 0;
+}
+
+.overlay {
+    grid-area: 1 / 1 / 11 / 17;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.925);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.overlay h4 {
+    font-size: 3em;
+}
+
+main {
+    margin: 5vw;
+}
+
+.left {
+    text-align: left;
+}
+
+/*** Grid About ***/
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+}
+
+#work {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    column-gap: 0.5em;
+    padding-top: 15vh;
+}
+
+#GraphicDesign {
+    display: grid;
+    grid-template-rows: repeat(7, 57vh);
+    row-gap: 3em;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+#ThreeDDesign {
+    display: grid;
+    grid-template-rows: repeat(4, 57vh);
+    row-gap: 3em;
+    padding-bottom: 15vh;
+    padding-top: 15vh;
+}
+
+#Illustration {
+    display: grid;
+    grid-template-rows: repeat(3, 57vh);
+    row-gap: 3em;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+}
+
+#InTouch {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10vw;
+    margin: 5vw;
+}
+
+.grid-project-pictures {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    column-gap: 0.5em;
+    grid-template-rows: repeat(10, 1fr);
+    row-gap: 0.5em;
+}
+
+/*** Navigation ***/
+header {
+    background-color: #0037FF;
+    margin: 2.5em;
+    height: 3em;
+    position: sticky;
+    z-index: 1000;
+    top: 2.5em;
+}
+
+.Nav {
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: x-large;
+}
+
+nav {
+    padding-left: 1em;
+    padding-right: 1em;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.6em;
+}
+
+/*** Start ***/
+#startpage {
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#start {
+    width: 65vw;
+}
+
+/*** About **/
+#Intro {
+    grid-column: 3/7;
+    text-align: right;
+}
+
+#Line {
+    display: block;
+    border-bottom-color: #0037FF;
+    border-bottom-style: solid;
+    border-bottom-width: 5px;
+}
+
+.RubrikenWork {
+    font-family: "Tinos";
+    font-style: oblique;
+    font-size: 2em;
+    line-height: 1.5em;
+    color: #0037FF;
+    text-decoration: none;
+}
+
+#Strenghts a:hover {
+    text-decoration: underline;
+}
+
+#Strenghts {
+    grid-column: 3/5;
+    padding-top: 30vh;
+}
+
+#Strenghts_preview {
+    padding-top: 20vh;
+    grid-column: 5/7;
+    position: relative;
+}
+
+
+#Strenghts_preview figure {
+    position: absolute;
+}
+
+
+
+
+#Education {
+    grid-column: 3/5;
+    padding-top: 33vh;
+}
+
+#Experience {
+    grid-column: 5/7;
+    text-align: right;
+    padding-top: 33vh;
+}
+
+/*** Work ***/
+#work h4 {
+    grid-column: 5/13;
+}
+
+#work h6 {
+    grid-column: 3/15;
+}
+
+
+/*** Graphic Design ***/
+
+#GraphicDesign {
+    grid-column: 1/17;
+}
+
+#Steinbruch1 {
+    grid-area: 1/1/6/7;
+}
+
+#Steinbruch2 {
+    grid-area: 6/1/11/7;
+}
+
+#Steinbruch3 {
+    grid-area: 1/7/11/17;
+}
+
+#Steinbruch:hover .overlay {
+    opacity: 1;
+}
+
+#Postkarten1 {
+    grid-area: 1/1/11/8;
+}
+
+#Postkarten2 {
+    grid-area: 1/8/11/12;
+    background-image: url("IMG/Grafik/Postkarten/Postkarten_slide-2.gif");
+}
+
+#Postkarten3 {
+    grid-area: 1/12/11/17;
+}
+
+#Postkarten:hover .overlay {
+    opacity: 1;
+}
+
+#Postkarten2 img {
+    object-fit: scale-down;
+}
+
+#Album1 {
+    grid-area: 1/1/11/11;
+    background-color: black;
+}
+
+#Album1 img {
+    object-fit: scale-down;
+}
+
+#Album2 {
+    grid-area: 1/11/11/17;
+}
+
+#Album:hover .overlay {
+    opacity: 1;
+}
+
+#Tomaten1 {
+    grid-area: 1/1/11/6;
+}
+
+#Tomaten2 {
+    grid-area: 1/6/11/13;
+}
+
+#Tomaten3 {
+    grid-area: 1/13/11/17;
+}
+
+#Tomaten:hover .overlay {
+    opacity: 1;
+}
+
+#Urban1 {
+    grid-area: 1/1/11/6;
+}
+
+#Urban2 {
+    grid-area: 1/6/11/11;
+}
+
+#Urban3 {
+    grid-area: 1/11/5/17;
+}
+
+#Urban3 img {
+    object-position: 100% 85%;
+}
+
+#Urban4 {
+    grid-area: 5/11/11/17;
+}
+
+#Urban:hover .overlay {
+    opacity: 1;
+}
+
+#Knestum1 {
+    grid-area: 1/1/11/7;
+}
+
+#Knestum2 {
+    grid-area: 1/7/11/13;
+}
+
+#Knestum2 img {
+    object-fit: scale-down;
+}
+
+#Knestum3 {
+    grid-area: 1/13/11/17;
+}
+
+#Knestum:hover .overlay {
+    opacity: 1;
+}
+
+#Papeterie1 {
+    grid-area: 1/1/11/5;
+}
+
+#Papeterie2 {
+    grid-area: 1/5/11/9;
+}
+
+#Papeterie3 {
+    grid-area: 1/9/11/17;
+}
+
+#Papeterie:hover .overlay {
+    opacity: 1;
+}
+
+
+/*** 3d Design***/
+#ThreeDDesign {
+    grid-column: 1/17;
+}
+
+#PersonalBranding1 {
+    grid-area: 1/1/11/8;
+}
+
+#PersonalBranding2 {
+    grid-area: 1/8/5/12;
+}
+
+#PersonalBranding3 {
+    grid-area: 5/8/11/12;
+}
+
+#PersonalBranding4 {
+    grid-area: 1/12/11/17;
+}
+
+#PersonalBranding:hover .overlay {
+    opacity: 1;
+}
+
+#DailyBlind1 {
+    grid-area: 1/1/11/6;
+}
+
+#DailyBlind2 {
+    grid-area: 1/6/11/12;
+}
+
+#DailyBlind3 {
+    grid-area: 1/12/11/17;
+}
+
+#DailyBlind:hover .overlay {
+    opacity: 1;
+}
+
+#CreativeCompetition1 {
+    grid-area: 1/1/11/7;
+}
+
+#CreativeCompetition1 img {
+    object-position: 90% 20%;
+}
+
+#CreativeCompetition2 {
+    grid-area: 1/7/11/11;
+}
+
+#CreativeCompetition3 {
+    grid-area: 1/11/11/17;
+}
+
+#CreativeCompetition3 img {
+    object-position: 90% 30%;
+}
+
+#CreativeCompetition:hover .overlay {
+    opacity: 1;
+}
+
+#Others1 {
+    grid-area: 1/1/11/8;
+}
+
+#Others2 {
+    grid-area: 1/8/11/12;
+}
+
+#Others3 {
+    grid-area: 1/12/11/17;
+}
+
+#Others:hover .overlay {
+    opacity: 1;
+}
+
+
+
+/*** Illustration ***/
+#Illustration {
+    grid-column: 1/17;
+}
+
+#Sternennacht1 {
+    grid-area: 1/1/11/17;
+}
+
+#Sternennacht1 img {
+    object-position: 180% 30%;
+}
+
+#Sternennacht2 {
+    grid-area: 1/1/11/8;
+}
+
+#Sternennacht2 img {
+    object-fit: scale-down;
+    object-position: -100% -30%;
+}
+
+#Sternennacht:hover .overlay {
+    opacity: 1;
+}
+
+#NewBalance1 {
+    grid-area: 1/1/11/11;
+}
+
+#NewBalance2 {
+    grid-area: 1/11/11/17;
+}
+
+#NewBalance2 img {
+    object-fit: cover;
+    object-position: 100% 100%;
+}
+
+#NewBalance:hover .overlay {
+    opacity: 1;
+}
+
+#Expiry1 {
+    grid-area: 1/1/11/9;
+}
+
+#Expiry2 {
+    grid-area: 1/9/6/17;
+}
+
+#Expiry3 {
+    grid-area: 6/9/11/17;
+}
+
+#Expiry:hover .overlay {
+    opacity: 1;
+}
+
+
+
+/*** Footer ***/
+footer {
+    background-color: #0037FF;
+    height: 100vh;
+    width: 100vw;
+}
+
+#slogan,
+#ContactInfo {
+    padding-top: 20vh;
+}
